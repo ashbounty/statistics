@@ -7,6 +7,7 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from scipy.stats import norm
+from scipy.stats import expon
 
 # Set some global settings for the plots
 mpl.rc(('axes', 'xtick', 'ytick'), labelsize='small')
