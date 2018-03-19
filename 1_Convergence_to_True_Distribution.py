@@ -1,7 +1,3 @@
-# This file takes random samples from a population with distribution F. The sample size, starting at 10, will successively 
-# increase by factor 10, ending at 100000. This simulation intends to illustrate that the empirical distribution function
-# converges to the true distribution function of the population. 
-
 # Load packages
 import numpy as np
 import matplotlib as mpl
@@ -15,6 +11,7 @@ mpl.rcParams['axes.titlesize'] = 'medium'
 mpl.rcParams['axes.titleweight'] = 'bold'
 mpl.rcParams['axes.grid'] = True
 mpl.rcParams['grid.alpha'] = 0.2
+
 
 # 1) Simulation: Normal distribution
 
@@ -39,6 +36,7 @@ for i in range(5):
 fg.subplots_adjust(hspace=0)
 plt.show()
 
+
 # 2) Simulation: Exponential distribution
 
 # Create true distribution function
@@ -61,7 +59,3 @@ for i in range(5):
                transform=ax[i].transAxes)
 fg.subplots_adjust(hspace=0)
 plt.show()
-
-# Observations:
-# A histogram is a consistent estimator for the distribution function of the population
-# The empirical distribution converges to the true distribution for large N
